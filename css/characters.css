@@ -1,0 +1,17 @@
+.class {
+	width: 32px;
+	height: 32px;
+	border-radius:  16px;
+	position: relative;
+	top: 0;
+	left: 0;
+	box-shadow: 0 0 15px 5px #101010 inset;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.deathknight {
+	background-image: url(../img/characters/class_deathknight.jpg);
+}
+

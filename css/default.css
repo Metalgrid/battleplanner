@@ -1,0 +1,51 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	height: 99%;
+	width: 99%;
+}
+
+header {
+	height: 150px;
+}
+
+#controls {
+	float: left;
+	width: 150px;
+}
+
+#map {
+	float: left;
+	background: url(../img/maps/nighthold/aluriel.jpg) no-repeat top left;
+	width: 80%;
+	height: 100%;
+	background-size: cover;
+	position: relative;
+}
+
+#steps {
+	float: left;
+	width: 250px;
+}
+
+footer {
+	clear: both;
+	height: 150px;
+}
+
+#debug {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 150px;
+	height: 150px;
+	background-color: #000;
+	color: #fff;
+}
+
+.dragging {
+	cursor: move;
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Battle planner</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="css/default.css"/>
+		<link rel="stylesheet" type="text/css" href="css/characters.css"/>
+	</head>
+	<body>
+	
+	<header>Battle Planner</header>
+	
+	<section id="controls">
+		<input name="character-name" type="text" placeholder="Character name"/>
+		<select name="character-class">
+			<option value="deathknight">Death Knight</option>
+			<option value="demonhunter">Demon Hunter</option>
+			<option value="druid">Druid</option>
+			<option value="hunter">Hunter</option>
+			<option value="mage">Mage</option>
+			<option value="monk">Monk</option>
+			<option value="paladin">Paladin</option>
+			<option value="prist">Priest</option>
+			<option value="rogue">Rogue</option>
+			<option value="shaman">Shaman</option>
+			<option value="warlock">Warlock</option>
+			<option value="warrior">Warrior</option>
+		</select>
+		<button name="character-add">Add character</button>
+	</section>
+
+	<section id="map"></section>
+	
+	<section id="steps">steps</section>
+	
+	<section>
+		<textarea id="loader" cols="80" rows="25" placeholder="Paste your scenario here and press 'Load'"></textarea>
+		<button id="load-button">Load</button>
+	</section>
+
+	<footer>footer</footer>
+
+<div id="debug"></div>
+
+<!-- [+] JavaScript -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="js/character.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
+<script type="text/javascript" src="js/mouse-handler.js"></script>
+<script type="text/javascript" src="js/scenario.js"></script>
+<script type="text/javascript">
+	s = new Scenario();
+	m = new Map();
+	c = new Character('Excrutiation', 'deathknight');
+	c2 = new Character('Axtroz', 'deathknight');
+</script>
+<!-- [-] Javascript -->
+</body>
+</html>
